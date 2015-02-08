@@ -39,7 +39,7 @@ void DFRobotL298PShield::left_set_pwm(int16_t desired_pwm)
     analogWrite(LEFT_PWM, left_invert_direction_ * -1 * desired_pwm);
   }
   else
-    {
+  {
     digitalWrite(LEFT_EN, HIGH);
     if (desired_pwm > 255)
       desired_pwm = 255;
@@ -58,7 +58,7 @@ void DFRobotL298PShield::right_set_pwm(int16_t desired_pwm)
     analogWrite(RIGHT_PWM, right_invert_direction_ * -1 * desired_pwm);
   }
   else
-    {
+  {
     digitalWrite(RIGHT_EN, HIGH);
     if (desired_pwm > 255)
       desired_pwm = 255;
